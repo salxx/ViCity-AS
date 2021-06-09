@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 7a432eabfc32d8c40ba0057ac21c11d5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - radiobuttonPrefab: {fileID: 3029439422238632158, guid: 0b0e7ed991e42e547956ab6aca993fd9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
