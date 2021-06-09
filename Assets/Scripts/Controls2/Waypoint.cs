@@ -4,5 +4,9 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    public Waypoint[] connections;
+    public Waypoint up;
+    public Waypoint down;
+    public Waypoint left;
+    public Waypoint right;
+
 }
