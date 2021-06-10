@@ -33,6 +33,6 @@ public class CameraMoveScript : MonoBehaviour
         {
             direciton += Vector3.down;
         }
-        transform.position = transform.position += Time.deltaTime * direciton * (Input.GetKey(KeyCode.LeftShift) ? 4f : 2f);
+        transform.position = transform.position += Time.deltaTime * direciton * (Input.GetKey(KeyCode.LeftShift) ? 6f : 3f);
     }
 }
