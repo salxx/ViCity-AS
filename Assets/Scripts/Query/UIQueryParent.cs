@@ -1,18 +1,35 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
+public class UIQueryParentResult
+{
+    public string pageName;
+    public List<AbstractUIQueryResult> result = new List<AbstractUIQueryResult>();
+}
+
+
 public class UIQueryParent : MonoBehaviour
 {
-    public void SendData()
+    public string pageName;
+
+    public void ContinueFlow()
     {
-        string result = "";
-        foreach(AbstractUIQuery uiQuery in GetComponentsInChildren<AbstractUIQuery>())
+        GetComponentInParent<UIQueryManager>().NotifyPageDone();
+    }
+
+    public UIQueryParentResult GetData()
+    {
+        UIQueryParentResult result = new UIQueryParentResult();
+        result.pageName = pageName;
+        foreach (AbstractUIQuery uiQuery in GetComponentsInChildren<AbstractUIQuery>())
         {
-            result += uiQuery.GetResult();
+            result.result.Add(uiQuery.GetResult());
         }
-        FindObjectOfType<SendToGoogle>().PostData(result);
+        return result;
     }
 
     public void NotifyChange()

@@ -16,12 +16,11 @@ public class UIQueryRadioButtons : AbstractUIQuery
 
     }
 
-    public override string GetResult()
+    public override AbstractUIQueryResult GetResult()
     {
-        string result = "{";
-        result += "query:" + query;
-        result += ",result:" + options[GetComponentInChildren<RadiobuttonGroupCreator>().GetCurrentOption()];
-        result += "}";
+        AbstractUIQueryResult result = new AbstractUIQueryResult();
+        result.query = query;
+        result.result = options[GetComponentInChildren<RadiobuttonGroupCreator>().GetCurrentOption()];
         return result;
     }
 

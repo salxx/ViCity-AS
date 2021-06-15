@@ -16,12 +16,11 @@ public class UIQueryRadioTextInput : AbstractUIQuery
         input.onValueChanged.AddListener(e => GetComponentInParent<UIQueryParent>().NotifyChange());
     }
 
-    public override string GetResult()
+    public override AbstractUIQueryResult GetResult()
     {
-        string result = "{";
-        result += "query:" + query;
-        result += ",result:" + input.text;
-        result += "}";
+        AbstractUIQueryResult result = new AbstractUIQueryResult();
+        result.query = query;
+        result.result = input.text;
         return result;
     }
 
