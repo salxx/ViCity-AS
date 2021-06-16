@@ -9,7 +9,6 @@ public class CameraFollowPlayerScript : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 newPos = player.transform.position;
-        newPos.x = 0;
         transform.position = newPos;
     }
 }
