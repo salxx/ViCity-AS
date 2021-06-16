@@ -25,21 +25,27 @@ public class PlayerWaypointMoveScript : MonoBehaviour
     private void OnEnable()
     {
         destination = transform.position;
+        playerToDestination = destination - transform.position;
+        waypointParent.SetActive(true);
     }
 
     private void OnDisable()
     {
+        waypointParent.SetActive(false);
     }
 
     void Update()
     {
         Vector3 direction = Vector3.zero;
-        if(Mathf.Abs(transform.position.z - destination.z) > 0.05f || Mathf.Abs(transform.position.x - destination.x) > 0.05f) {
+        if(Mathf.Abs(transform.position.z - destination.z) > 0.2f || Mathf.Abs(transform.position.x - destination.x) > 0.2f) {
             HideUIArrows();
             direction = playerToDestination.normalized;
             transform.forward = playerToDestination;
+            GetComponent<Animator>().SetBool("Running", direction.magnitude > 0);
+            transform.position = transform.position + (Time.deltaTime * direction * 6f);
         } else
         {
+            transform.position = destination;
             VisualizeUIArrows();
             Vector3 next = GetNextDestination();
             if(next.magnitude > 0.01f) {
@@ -47,27 +53,25 @@ public class PlayerWaypointMoveScript : MonoBehaviour
                 playerToDestination = destination - transform.position;
                 playerToDestination.y = 0;
             }
+            GetComponent<Animator>().SetBool("Running", false);
         }
-        GetComponent<Animator>().SetBool("Walking", !Input.GetKey(KeyCode.LeftShift) && direction.magnitude > 0);
-        GetComponent<Animator>().SetBool("Running", Input.GetKey(KeyCode.LeftShift) && direction.magnitude > 0);
-        transform.position = transform.position += Time.deltaTime * direction * (Input.GetKey(KeyCode.LeftShift) ? 4f : 2f);
     }
 
     private Vector3 GetNextDestination() {
         Vector3 movement = Vector3.zero;
-        if(Input.GetKeyDown(KeyCode.W) && current.up != null) {
+        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && current.up != null) {
             movement = current.up.transform.position;
             current = current.up;
         } else
-        if(Input.GetKeyDown(KeyCode.A) && current.left != null) {
+        if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && current.left != null) {
             movement = current.left.transform.position;
             current = current.left;
         } else
-        if(Input.GetKeyDown(KeyCode.S) && current.down != null) {
+        if((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && current.down != null) {
             movement = current.down.transform.position;
             current = current.down;
         } else
-        if(Input.GetKeyDown(KeyCode.D) && current.right != null) {
+        if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && current.right != null) {
             movement = current.right.transform.position;
             current = current.right;
         }

@@ -53,7 +53,7 @@ public class PlayerMoveScript : MonoBehaviour
             indicator.gameObject.SetActive(false);
         }
         GetComponent<Animator>().SetBool("Running", direction.magnitude > 0);
-        characterController.Move(Time.deltaTime * direction * 5f);
+        characterController.Move(Time.deltaTime * direction * 6f);
 
         RaycastHit hit;
         if(Physics.Raycast(transform.position, Vector3.down, out hit))
