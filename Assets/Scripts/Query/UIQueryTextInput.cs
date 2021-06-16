@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class UIQueryRadioTextInput : AbstractUIQuery
+public class UIQueryTextInput : AbstractUIQuery
 {
     public TextMeshProUGUI caption;
     public TMP_InputField input;

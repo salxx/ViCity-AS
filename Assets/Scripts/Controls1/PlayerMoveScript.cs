@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMoveScript : MonoBehaviour
 {
@@ -8,7 +9,11 @@ public class PlayerMoveScript : MonoBehaviour
     Vector3 playerToDestination;
     public GameObject indicator;
     public LayerMask mouseTarget;
+    public bool allowKeys = true;
+    public bool allowMouse = false;
     CharacterController characterController;
+
+    float previousDestinationDistance;
 
     private void Awake()
     {
@@ -28,8 +33,17 @@ public class PlayerMoveScript : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = KeyMovement();
-        if(direction.magnitude < 0.01f)
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
+        Vector3 direction = Vector3.zero;
+        if (allowKeys)
+        {
+            direction = KeyMovement();
+        }
+        if(direction.magnitude < 0.01f && allowMouse)
         {
             direction = MouseMovement();
         }
@@ -50,6 +64,8 @@ public class PlayerMoveScript : MonoBehaviour
         }
     }
 
+    int frames = 0;
+
     private Vector3 MouseMovement()
     {
         if (Input.GetMouseButton(0))
@@ -59,13 +75,16 @@ public class PlayerMoveScript : MonoBehaviour
             {
                 destination = hit.point;
                 playerToDestination = destination - transform.position;
+                previousDestinationDistance = playerToDestination.magnitude;
                 playerToDestination.y = 0;
             }
         }
 
         Vector3 direction = Vector3.zero;
-        if (Mathf.Abs(transform.position.z - destination.z) > 0.1f)
+        if ((transform.position - destination).magnitude > 0.1f)
         {
+            playerToDestination = destination - transform.position;
+            playerToDestination.y = 0;
             direction = playerToDestination.normalized;
             transform.forward = playerToDestination;
 
@@ -73,6 +92,21 @@ public class PlayerMoveScript : MonoBehaviour
             indicatorPos.y = 0.001f;
             indicator.transform.position = indicatorPos;
             indicator.gameObject.SetActive(true);
+
+            if(playerToDestination.magnitude >= previousDestinationDistance)
+            {
+                if(frames >= 10)
+                {
+                    destination = transform.position;
+                } else
+                {
+                    frames++;
+                }
+            } else
+            {
+                previousDestinationDistance = playerToDestination.magnitude;
+                frames = 0;
+            }
         }
         else
         {

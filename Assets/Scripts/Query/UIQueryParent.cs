@@ -16,6 +16,29 @@ public class UIQueryParent : MonoBehaviour
 {
     public string pageName;
 
+    private void Start()
+    {
+        NotifyChange();
+        if(GetComponentInChildren<Button>().interactable)
+        {
+            GetComponentInChildren<Button>().interactable = false;
+            StartCoroutine(DelayedButton());
+        }
+    }
+
+    private IEnumerator DelayedButton()
+    {
+        int seconds = 2;
+        while(seconds > 0)
+        {
+            GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Weiter (" + seconds + ")";
+            yield return new WaitForSeconds(1f);
+            seconds--;
+        }
+        GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Weiter";
+        GetComponentInChildren<Button>().interactable = true;
+    }
+
     public void ContinueFlow()
     {
         GetComponentInParent<UIQueryManager>().NotifyPageDone();
@@ -27,7 +50,11 @@ public class UIQueryParent : MonoBehaviour
         result.pageName = pageName;
         foreach (AbstractUIQuery uiQuery in GetComponentsInChildren<AbstractUIQuery>())
         {
-            result.result.Add(uiQuery.GetResult());
+            AbstractUIQueryResult res = uiQuery.GetResult();
+            if(res != null)
+            {
+                result.result.Add(res);
+            }
         }
         return result;
     }
