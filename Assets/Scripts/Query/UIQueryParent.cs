@@ -66,6 +66,9 @@ public class UIQueryParent : MonoBehaviour
         {
             canSend = canSend && uiQuery.IsAccepted();
         }
-        GetComponentInChildren<Button>().interactable = canSend;
+        if(GetComponentInChildren<Button>())
+        {
+            GetComponentInChildren<Button>().interactable = canSend;
+        }
     }
 }
