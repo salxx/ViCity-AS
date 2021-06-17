@@ -8,6 +8,6 @@ public class CameraSwitchPrepScript : AbstractPreparationScript
 
     public override void DoPreparation()
     {
-        script.gameObject.SetActive(true);
+        script.enabled = true;
     }
 }
