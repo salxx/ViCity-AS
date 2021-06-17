@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,6 +38,22 @@ public class UIQueryManager : MonoBehaviour
         currentCatalogue = catalogues[currentCatalogueId];
         currentCatalogue.gameObject.SetActive(true);
         LoadCurrentPage();
+    }
+
+    public void RetryCatalogue(UIQueryCatalogue catalogueToRetry)
+    {
+        int index = -1;
+        for(int i = 0; i < catalogues.Length; i++)
+        {
+            if(catalogues[i] == catalogueToRetry)
+            {
+                index = i;
+                break;
+            }
+        }
+        currentPageId = 999;
+        currentCatalogueId = index - 1;
+        NotifyPageDone();
     }
 
     public void NotifyPageDone()

@@ -20,7 +20,11 @@ public class UIQueryRadioButtons : AbstractUIQuery
     {
         AbstractUIQueryResult result = new AbstractUIQueryResult();
         result.query = query;
-        result.result = options[GetComponentInChildren<RadiobuttonGroupCreator>().GetCurrentOption()];
+        int option = GetComponentInChildren<RadiobuttonGroupCreator>().GetCurrentOption();
+        if(option >= 0)
+        {
+            result.result = options[option];
+        }
         return result;
     }
 
