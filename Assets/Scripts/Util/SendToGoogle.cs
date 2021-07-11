@@ -20,6 +20,7 @@ public class SendToGoogle : MonoBehaviour {
     }
 
     public void PostData(string data) {
+        return; //TODO: readd
         StartCoroutine(Post(data));
     }
 }

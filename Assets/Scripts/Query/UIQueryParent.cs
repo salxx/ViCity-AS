@@ -15,6 +15,12 @@ public class UIQueryParentResult
 public class UIQueryParent : MonoBehaviour
 {
     public string pageName;
+    public string pageNameEng;
+
+    public virtual string GetLocalizedPageName()
+    {
+        return LanguageSelection.lang == 0 ? pageName : pageNameEng;
+    }
 
     private void Start()
     {
@@ -31,12 +37,17 @@ public class UIQueryParent : MonoBehaviour
         int seconds = 2;
         while(seconds > 0)
         {
-            GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Weiter (" + seconds + ")";
+            GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = GetLocalizedNext() + " (" + seconds + ")";
             yield return new WaitForSeconds(1f);
             seconds--;
         }
-        GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Weiter";
+        GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = GetLocalizedNext();
         GetComponentInChildren<Button>().interactable = true;
+    }
+
+    private static string GetLocalizedNext()
+    {
+        return LanguageSelection.lang == 0 ? "Weiter" : "Next";
     }
 
     public void ContinueFlow()

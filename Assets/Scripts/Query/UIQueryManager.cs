@@ -97,13 +97,13 @@ public class UIQueryManager : MonoBehaviour
                 prepScript.DoPreparation();
             }
             gameObject.GetComponent<Canvas>().enabled = false;
-            infoCanvas.GetComponentInChildren<TextMeshProUGUI>().text = currentCatalogue.catalogueName;
+            infoCanvas.GetComponentInChildren<TextMeshProUGUI>().text = (LanguageSelection.lang == 0) ? currentCatalogue.catalogueName : currentCatalogue.catalogueNameEng;
             infoCanvas.enabled = true;
         } else
         {
             currentPage = currentCatalogue.pages[currentPageId];
             currentPage.gameObject.SetActive(true);
-            pageName.text = currentPage.pageName;
+            pageName.text = currentPage.GetLocalizedPageName();
         }
     }
 
