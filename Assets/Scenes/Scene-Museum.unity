@@ -3210,6 +3210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: "Bewegen (Linke Maus Taste dr\xFCcken oder gedr\xFCckt halten)"
+  textEng: Movement (Left Mouse Button click or pressed)
 --- !u!114 &115361399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6345,6 +6346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: bevorzugte Steuerung
+  textEng: prefered Movement
 --- !u!114 &214086324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10126,6 +10128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: Bewegen (WASD oder Pfeil-Tasten)
+  textEng: Movement (WASD or Arrow-Keys)
 --- !u!114 &369888624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15125,6 +15128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: Bewegen (WASD oder Pfeil-Tasten)
+  textEng: Movement (WASD or Arrow-Keys)
 --- !u!114 &652025493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16041,6 +16045,10 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Kamera 3 bewerten
   queryTextEng: Task - Rate Camera 3
+  queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
+    die Kamera bzgl. Winkel, Tiefe und Distanz.'
+  queryDetailsEng: 'Movement: Prefered Movement from last section. Please rate the
+    camera by Angle, Depth and Distance.'
 --- !u!114 &696511158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16502,6 +16510,10 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Kamera 2 bewerten
   queryTextEng: Task - Rate Camera 2
+  queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
+    die Kamera bzgl. Winkel, Tiefe und Distanz.'
+  queryDetailsEng: 'Movement: Prefered Movement from last section. Please rate the
+    camera by Angle, Depth and Distance.'
 --- !u!114 &704011438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16990,6 +17002,8 @@ MonoBehaviour:
   required: 0
   queryText: "Danke f\xFCrs Teilnehmen!"
   queryTextEng: Thank you for participating!
+  queryDetails: 
+  queryDetailsEng: 
 --- !u!114 &717713452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18319,6 +18333,10 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Kamera 4 bewerten
   queryTextEng: Task - Rate Camera 4
+  queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
+    die Kamera bzgl. Winkel, Tiefe und Distanz.'
+  queryDetailsEng: 'Movement: Prefered Movement from last section. Please rate the
+    camera by Angle, Depth and Distance.'
 --- !u!114 &771659354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20433,6 +20451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: bevorzugte Steuerung
+  textEng: prefered Movement
 --- !u!114 &857196534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20975,6 +20994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: Mit 1,2,3,4 zwischen Kameras wechseln
+  textEng: Press 1,2,3,4 to change Camera
 --- !u!114 &891096202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21303,6 +21323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: bevorzugte Steuerung
+  textEng: prefered Movement
 --- !u!114 &893693615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23207,6 +23228,9 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Freie Steuerung Keyboard
   queryTextEng: Task - Free Movement Keyboard
+  queryDetails: "Freie Steuerung mit Pfeiltasten (oder WASD) mit anschlie\xDFender
+    Bewertung"
+  queryDetailsEng: Free Movement with Arrow-Keys (or WASD) with Subsequent Rating
 --- !u!114 &980977531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26302,6 +26326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmproText: {fileID: 1585570139}
   text: bevorzugte Steuerung
+  textEng: prefered Movement
 --- !u!114 &1094568160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37016,6 +37041,8 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Freie Steuerung Maus
   queryTextEng: Task - Free Movement Mouse
+  queryDetails: "Freie Steuerung mit linker Maus-Taste mit anschlie\xDFender Bewertung"
+  queryDetailsEng: Free Movement with Left Mouse Button with Subsequent Rating
 --- !u!114 &1579063862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40042,6 +40069,10 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Kamera 1 bewerten
   queryTextEng: Task - Rate Camera 1
+  queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
+    die Kamera bzgl. Winkel, Tiefe und Distanz.'
+  queryDetailsEng: 'Movement: Prefered Movement from last section. Please rate the
+    camera by Angle, Depth and Distance.'
 --- !u!114 &1699206672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45188,6 +45219,9 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Freie Steuerung Wegpunkte
   queryTextEng: Task - Free Movement Waypoints
+  queryDetails: "Freie Steuerung mit Pfeiltasten (oder WASD) mit anschlie\xDFender
+    Bewertung"
+  queryDetailsEng: Free Movement with Arrow-Keys (or WASD) with Subsequent Rating
 --- !u!114 &1993788217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45897,6 +45931,8 @@ MonoBehaviour:
   required: 0
   queryText: Aufgabe - Kameras vergleichen
   queryTextEng: Task - Compare Cameras
+  queryDetails: 'Steuerung: Mit Nummertasten 1-4 zwischen Kameras wechseln'
+  queryDetailsEng: 'Controls: Change Camera with Numerical Keys 1-4'
 --- !u!114 &2021875509
 MonoBehaviour:
   m_ObjectHideFlags: 0
