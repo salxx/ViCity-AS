@@ -14,6 +14,7 @@ public class WaypointInputPrepScript : AbstractPreparationScript
         {
             FindObjectOfType<PlayerMoveScript>().enabled = false;
             FindObjectOfType<PlayerWaypointMoveScript>().gameObject.transform.position = FindObjectOfType<PlayerWaypointMoveScript>().current.transform.position;
+            FindObjectOfType<PlayerWaypointMoveScript>().HideUIArrows();
             FindObjectOfType<PlayerWaypointMoveScript>().enabled = true;
             FindObjectOfType<PlayerWaypointMoveScript>().GetComponent<CharacterController>().enabled = false;
             FindObjectOfType<PlayerWaypointMoveScript>().clickMovement = clickMovement;
@@ -23,6 +24,7 @@ public class WaypointInputPrepScript : AbstractPreparationScript
         else
         {
             FindObjectOfType<PlayerMoveScript>().enabled = true;
+            FindObjectOfType<PlayerWaypointMoveScript>().HideUIArrows();
             FindObjectOfType<PlayerWaypointMoveScript>().enabled = false;
             FindObjectOfType<PlayerWaypointMoveScript>().GetComponent<CharacterController>().enabled = true;
             arrowCanvas.enabled = false;

@@ -135,7 +135,7 @@ public class PlayerWaypointMoveScript : MonoBehaviour
         }
     }
 
-    private void HideUIArrows() {
+    public void HideUIArrows() {
         upArrow.gameObject.SetActive(false);
         leftArrow.gameObject.SetActive(false);
         downArrow.gameObject.SetActive(false);

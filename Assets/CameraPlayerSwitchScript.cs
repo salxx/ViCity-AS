@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CameraPlayerSwitchScript : MonoBehaviour
 {
     public GameObject cameraParent;
+    public TextMeshProUGUI cameraNameText;
+
+    private void OnEnable()
+    {
+        cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 1 - Referenz" : "Camera 1 - Reference";
+        CameraSwitch0(0);
+    }
 
     private void Update()
     {
@@ -15,22 +23,27 @@ public class CameraPlayerSwitchScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Keypad1))
         {
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 1 - Referenz" : "Camera 1 - Reference";
             CameraSwitch0(0);
         }
         if (Input.GetKey(KeyCode.Alpha2) || Input.GetKey(KeyCode.Keypad2))
         {
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 2 - Mehr Distanz" : "Camera 1 - More Distance";
             CameraSwitch0(1);
         }
         if (Input.GetKey(KeyCode.Alpha3) || Input.GetKey(KeyCode.Keypad3))
         {
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 3 - Mehr Meigung" : "Camera 1 - More Incline";
             CameraSwitch0(2);
         }
         if (Input.GetKey(KeyCode.Alpha4) || Input.GetKey(KeyCode.Keypad4))
         {
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 4 - Weniger Tiefe" : "Camera 1 - Less Depth";
             CameraSwitch0(3);
         }
         if (Input.GetKey(KeyCode.Alpha5) || Input.GetKey(KeyCode.Keypad5))
         {
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 5 - Weniger Neigung" : "Camera 1 - Less Incline";
             CameraSwitch0(4);
         }
     }
