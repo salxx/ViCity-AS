@@ -33855,17 +33855,17 @@ MonoBehaviour:
   query: Bevorzugte Kamera
   queryEng: Preferred Camera
   options:
-  - Kamera 1
-  - Kamera 2
-  - Kamera 3
-  - Kamera 4
-  - Kamera 5
+  - Kamera 1 - Referenz
+  - Kamera 2 - Mehr Distanz
+  - Kamera 3 - Mehr Neigung
+  - Kamera 4 - Weniger Tiefe
+  - Kamera 5 - Weniger Neigung
   optionsEng:
-  - Camera 1
-  - Camera 2
-  - Camera 3
-  - Camera 4
-  - Camera 5
+  - Camera 1 - Reference
+  - Camera 2 - More Distance
+  - Camera 3 - More Incline
+  - Camera 4 - Less Depth
+  - Camera 5 - Less Incline
 --- !u!114 &1260332049
 MonoBehaviour:
   m_ObjectHideFlags: 0
