@@ -25,6 +25,12 @@ public class PreferedInputPrepScript : AbstractPreparationScript
                 break;
             case 2:
                 waypoint.allow = true;
+                waypoint.clickMovement = false;
+                waypoint.DoPreparation();
+                break;
+            case 3:
+                waypoint.allow = true;
+                waypoint.clickMovement = true;
                 waypoint.DoPreparation();
                 break;
         }

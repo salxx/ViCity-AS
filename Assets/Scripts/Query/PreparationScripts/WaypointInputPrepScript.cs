@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaypointInputPrepScript : AbstractPreparationScript
 {
     public bool allow = false;
+    public bool clickMovement = false;
     public Canvas arrowCanvas;
     public GameObject arrowGameObject;
 
@@ -15,6 +16,7 @@ public class WaypointInputPrepScript : AbstractPreparationScript
             FindObjectOfType<PlayerWaypointMoveScript>().gameObject.transform.position = FindObjectOfType<PlayerWaypointMoveScript>().current.transform.position;
             FindObjectOfType<PlayerWaypointMoveScript>().enabled = true;
             FindObjectOfType<PlayerWaypointMoveScript>().GetComponent<CharacterController>().enabled = false;
+            FindObjectOfType<PlayerWaypointMoveScript>().clickMovement = clickMovement;
             arrowCanvas.enabled = true;
             arrowGameObject.SetActive(true);
         }
