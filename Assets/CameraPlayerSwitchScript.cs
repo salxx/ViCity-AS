@@ -28,22 +28,22 @@ public class CameraPlayerSwitchScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Alpha2) || Input.GetKey(KeyCode.Keypad2))
         {
-            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 2 - Mehr Distanz" : "Camera 1 - More Distance";
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 2 - Mehr Distanz" : "Camera 2 - More Distance";
             CameraSwitch0(1);
         }
         if (Input.GetKey(KeyCode.Alpha3) || Input.GetKey(KeyCode.Keypad3))
         {
-            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 3 - Mehr Meigung" : "Camera 1 - More Incline";
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 3 - Mehr Meigung" : "Camera 3 - More Incline";
             CameraSwitch0(2);
         }
         if (Input.GetKey(KeyCode.Alpha4) || Input.GetKey(KeyCode.Keypad4))
         {
-            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 4 - Weniger Tiefe" : "Camera 1 - Less Depth";
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 4 - Weniger Tiefe" : "Camera 4 - Less Depth";
             CameraSwitch0(3);
         }
         if (Input.GetKey(KeyCode.Alpha5) || Input.GetKey(KeyCode.Keypad5))
         {
-            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 5 - Weniger Neigung" : "Camera 1 - Less Incline";
+            cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 5 - Weniger Neigung" : "Camera 5 - Less Incline";
             CameraSwitch0(4);
         }
     }
