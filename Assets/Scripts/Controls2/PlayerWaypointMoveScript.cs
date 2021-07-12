@@ -14,20 +14,26 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     public bool clickMovement = false;
 
-    public Image upArrow;
-    public Image leftArrow;
-    public Image downArrow;
-    public Image rightArrow;
+    public Button upArrow;
+    public Button leftArrow;
+    public Button downArrow;
+    public Button rightArrow;
 
     public GameObject upArrowGo;
     public GameObject leftArrowGo;
     public GameObject downArrowGo;
     public GameObject rightArrowGo;
 
+    int nextMoveDirection = -1;
+
     private void Awake()
     {
         transform.position = current.transform.position;
         destination = current.transform.position;
+        upArrow.onClick.AddListener(() => nextMoveDirection = 0);
+        leftArrow.onClick.AddListener(() => nextMoveDirection = 1);
+        downArrow.onClick.AddListener(() => nextMoveDirection = 2);
+        rightArrow.onClick.AddListener(() => nextMoveDirection = 3);
     }
 
     private void OnEnable()
@@ -69,21 +75,46 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     private Vector3 GetNextDestination() {
         Vector3 movement = Vector3.zero;
-        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && current.up != null) {
-            movement = current.up.transform.position;
-            current = current.up;
+        if(clickMovement)
+        {
+            switch(nextMoveDirection)
+            {
+                case 0:
+                    movement = current.up.transform.position;
+                    current = current.up;
+                    break;
+                case 1:
+                    movement = current.left.transform.position;
+                    current = current.left;
+                    break;
+                case 2:
+                    movement = current.down.transform.position;
+                    current = current.down;
+                    break;
+                case 3:
+                    movement = current.right.transform.position;
+                    current = current.right;
+                    break;
+            }
+            nextMoveDirection = -1;
         } else
-        if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && current.left != null) {
-            movement = current.left.transform.position;
-            current = current.left;
-        } else
-        if((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && current.down != null) {
-            movement = current.down.transform.position;
-            current = current.down;
-        } else
-        if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && current.right != null) {
-            movement = current.right.transform.position;
-            current = current.right;
+        {
+            if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && current.up != null) {
+                movement = current.up.transform.position;
+                current = current.up;
+            } else
+            if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && current.left != null) {
+                movement = current.left.transform.position;
+                current = current.left;
+            } else
+            if((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && current.down != null) {
+                movement = current.down.transform.position;
+                current = current.down;
+            } else
+            if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && current.right != null) {
+                movement = current.right.transform.position;
+                current = current.right;
+            }
         }
         return movement;
     }
@@ -91,10 +122,10 @@ public class PlayerWaypointMoveScript : MonoBehaviour
     private void VisualizeUIArrows() {
         if(clickMovement)
         {
-            upArrow.enabled = current.up != null;
-            leftArrow.enabled = current.left != null;
-            downArrow.enabled = current.down != null;
-            rightArrow.enabled = current.right != null;
+            upArrow.gameObject.SetActive(current.up != null);
+            leftArrow.gameObject.SetActive(current.left != null);
+            downArrow.gameObject.SetActive(current.down != null);
+            rightArrow.gameObject.SetActive(current.right != null);
         } else
         {
             upArrowGo.SetActive(current.up != null);
@@ -105,10 +136,10 @@ public class PlayerWaypointMoveScript : MonoBehaviour
     }
 
     private void HideUIArrows() {
-        upArrow.enabled = false;
-        leftArrow.enabled = false;
-        downArrow.enabled = false;
-        rightArrow.enabled = false;
+        upArrow.gameObject.SetActive(false);
+        leftArrow.gameObject.SetActive(false);
+        downArrow.gameObject.SetActive(false);
+        rightArrow.gameObject.SetActive(false);
 
         upArrowGo.SetActive(false);
         leftArrowGo.SetActive(false);

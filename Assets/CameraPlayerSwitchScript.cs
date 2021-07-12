@@ -29,6 +29,10 @@ public class CameraPlayerSwitchScript : MonoBehaviour
         {
             CameraSwitch0(3);
         }
+        if (Input.GetKey(KeyCode.Alpha5) || Input.GetKey(KeyCode.Keypad5))
+        {
+            CameraSwitch0(4);
+        }
     }
 
     private void CameraSwitch0(int index)
