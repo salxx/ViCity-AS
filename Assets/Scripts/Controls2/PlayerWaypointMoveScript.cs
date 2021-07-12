@@ -11,10 +11,18 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     public GameObject waypointParent;
     public Waypoint current;
+
+    public bool clickMovement = false;
+
     public Image upArrow;
     public Image leftArrow;
     public Image downArrow;
     public Image rightArrow;
+
+    public GameObject upArrowGo;
+    public GameObject leftArrowGo;
+    public GameObject downArrowGo;
+    public GameObject rightArrowGo;
 
     private void Awake()
     {
@@ -24,6 +32,7 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     private void OnEnable()
     {
+        HideUIArrows();
         destination = transform.position;
         playerToDestination = destination - transform.position;
         waypointParent.SetActive(true);
@@ -31,6 +40,7 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     private void OnDisable()
     {
+        HideUIArrows();
         waypointParent.SetActive(false);
     }
 
@@ -79,10 +89,19 @@ public class PlayerWaypointMoveScript : MonoBehaviour
     }
 
     private void VisualizeUIArrows() {
-        upArrow.enabled = current.up != null;
-        leftArrow.enabled = current.left != null;
-        downArrow.enabled = current.down != null;
-        rightArrow.enabled = current.right != null;
+        if(clickMovement)
+        {
+            upArrow.enabled = current.up != null;
+            leftArrow.enabled = current.left != null;
+            downArrow.enabled = current.down != null;
+            rightArrow.enabled = current.right != null;
+        } else
+        {
+            upArrowGo.SetActive(current.up != null);
+            leftArrowGo.SetActive(current.left != null);
+            downArrowGo.SetActive(current.down != null);
+            rightArrowGo.SetActive(current.right != null);
+        }
     }
 
     private void HideUIArrows() {
@@ -90,6 +109,11 @@ public class PlayerWaypointMoveScript : MonoBehaviour
         leftArrow.enabled = false;
         downArrow.enabled = false;
         rightArrow.enabled = false;
+
+        upArrowGo.SetActive(false);
+        leftArrowGo.SetActive(false);
+        downArrowGo.SetActive(false);
+        rightArrowGo.SetActive(false);
     }
 
 }

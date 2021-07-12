@@ -6,6 +6,7 @@ public class WaypointInputPrepScript : AbstractPreparationScript
 {
     public bool allow = false;
     public Canvas arrowCanvas;
+    public GameObject arrowGameObject;
 
     public override void DoPreparation() {
         if(allow)
@@ -15,6 +16,7 @@ public class WaypointInputPrepScript : AbstractPreparationScript
             FindObjectOfType<PlayerWaypointMoveScript>().enabled = true;
             FindObjectOfType<PlayerWaypointMoveScript>().GetComponent<CharacterController>().enabled = false;
             arrowCanvas.enabled = true;
+            arrowGameObject.SetActive(true);
         }
         else
         {
@@ -22,6 +24,7 @@ public class WaypointInputPrepScript : AbstractPreparationScript
             FindObjectOfType<PlayerWaypointMoveScript>().enabled = false;
             FindObjectOfType<PlayerWaypointMoveScript>().GetComponent<CharacterController>().enabled = true;
             arrowCanvas.enabled = false;
+            arrowGameObject.SetActive(false);
         }
     }
 }
