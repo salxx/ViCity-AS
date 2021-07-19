@@ -14,12 +14,22 @@ public class PlayerMoveScript : MonoBehaviour
     public bool allowMouse = false;
     CharacterController characterController;
 
+    Vector3 zeroPosition = new Vector3(20, 0, -18);
+
     float previousDestinationDistance;
 
     private void Awake()
     {
         indicator.gameObject.SetActive(false);
         characterController = GetComponent<CharacterController>();
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = zeroPosition;
+        destination = transform.position;
+        previousDestinationDistance = 0f;
+        GetComponent<Animator>().SetBool("Running", false);
     }
 
     private void OnEnable()

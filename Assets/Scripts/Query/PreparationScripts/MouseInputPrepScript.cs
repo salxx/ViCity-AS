@@ -8,6 +8,7 @@ public class MouseInputPrepScript : AbstractPreparationScript
 
     public override void DoPreparation()
     {
+        FindObjectOfType<PlayerMoveScript>().ResetPosition();
         PlayerMoveScript playerMoveScript = FindObjectOfType<PlayerMoveScript>();
         playerMoveScript.allowMouse = allow;
     }

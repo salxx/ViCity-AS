@@ -11,6 +11,7 @@ public class UIQueryTextInput : AbstractUIQuery
     public bool numbersOnly = false;
     public TextMeshProUGUI caption;
     public TMP_InputField input;
+    public string queryName = "Anmerkung";
     public string query = "Gender";
     public string queryEng = "Gender";
     string previousValue;
@@ -39,7 +40,7 @@ public class UIQueryTextInput : AbstractUIQuery
     public override AbstractUIQueryResult GetResult()
     {
         AbstractUIQueryResult result = new AbstractUIQueryResult();
-        result.query = query;
+        result.query = queryName;
         result.result = input.text;
         return result;
     }

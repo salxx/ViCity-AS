@@ -26,6 +26,6 @@ public class LanguageSelection : MonoBehaviour
 
     private void SetLangEng()
     {
-        infoNextButton.text = "Next";
+        infoNextButton.text = "Skip Task";
     }
 }

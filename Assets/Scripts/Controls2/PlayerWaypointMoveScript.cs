@@ -11,6 +11,7 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     public GameObject waypointParent;
     public Waypoint current;
+    Waypoint firstWaypoint;
 
     public bool clickMovement = false;
 
@@ -28,6 +29,7 @@ public class PlayerWaypointMoveScript : MonoBehaviour
 
     private void Awake()
     {
+        firstWaypoint = current;
         transform.position = current.transform.position;
         destination = current.transform.position;
         upArrow.onClick.AddListener(() => nextMoveDirection = 0);
@@ -36,9 +38,19 @@ public class PlayerWaypointMoveScript : MonoBehaviour
         rightArrow.onClick.AddListener(() => nextMoveDirection = 3);
     }
 
+    public void ResetPosition()
+    {
+        current = firstWaypoint;
+        transform.position = firstWaypoint.transform.position;
+        destination = firstWaypoint.transform.position;
+        playerToDestination = Vector3.zero;
+    }
+
     private void OnEnable()
     {
         HideUIArrows();
+        current = firstWaypoint;
+        transform.position = firstWaypoint.transform.position;
         destination = transform.position;
         playerToDestination = destination - transform.position;
         waypointParent.SetActive(true);
