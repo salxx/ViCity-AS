@@ -21,6 +21,8 @@ public class UIQueryManagerResult
 
 public class UIQueryManager : MonoBehaviour
 {
+    public static UIQueryManager INSTANCE;
+
     public Canvas infoCanvas;
     public TextMeshProUGUI pageName;
     public UIQueryCatalogue[] catalogues;
@@ -28,11 +30,12 @@ public class UIQueryManager : MonoBehaviour
 
     int currentPageId = 0;
     int currentCatalogueId = 0;
-    UIQueryCatalogue currentCatalogue;
+    public UIQueryCatalogue currentCatalogue;
     UIQueryParent currentPage;
 
     private void Start()
     {
+        INSTANCE = this;
         infoCanvas.enabled = false;
         sessionId = "" + (new System.Random()).Next(0, 100000);
         currentCatalogue = catalogues[currentCatalogueId];

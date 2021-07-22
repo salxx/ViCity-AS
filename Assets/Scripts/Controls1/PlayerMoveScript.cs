@@ -44,8 +44,9 @@ public class PlayerMoveScript : MonoBehaviour
 
     void Update()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        if (UIQueryManager.INSTANCE && UIQueryManager.INSTANCE.currentCatalogue && !UIQueryManager.INSTANCE.currentCatalogue.userTask)
         {
+            ResetPosition();
             return;
         }
 

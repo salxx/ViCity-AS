@@ -18,8 +18,18 @@ public class UIQueryParent : MonoBehaviour
 
     private void Start()
     {
+    }
+
+    private void OnDisable()
+    {
+
+        StopAllCoroutines();
+    }
+
+    private void OnEnable()
+    {
         NotifyChange();
-        if(GetComponentInChildren<Button>() && GetComponentInChildren<Button>().interactable)
+        if (GetComponentInChildren<Button>() && GetComponentInChildren<Button>().interactable)
         {
             GetComponentInChildren<Button>().interactable = false;
             StartCoroutine(DelayedButton());

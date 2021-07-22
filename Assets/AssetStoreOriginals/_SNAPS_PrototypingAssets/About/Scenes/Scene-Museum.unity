@@ -608,8 +608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung Wegpunkte Maus
-  catalogueNameEng: Controls Waypoints Mouse
   userTask: 1
   pages: []
 --- !u!1001 &13828529
@@ -1095,8 +1093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera 1 - Referenzkamera
-  catalogueNameEng: Camera 1 - Reference Camera
   userTask: 0
   pages:
   - {fileID: 1507447752}
@@ -1112,8 +1108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Steuerung Keyboard
-  nameEng: Controls Keyboard
+  name: Kamera 1 - Referenzkamera
+  nameEng: Camera 1 - Reference Camera
   title1: {fileID: 812500007}
   title2: {fileID: 1664012486}
 --- !u!1 &24118160
@@ -1147,7 +1143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 3 - Mehr Neigung
-  pageNameEng: Camera 3 - More Incline
 --- !u!114 &24118162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1672,8 +1667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Ende
-  catalogueNameEng: End
   userTask: 0
   pages:
   - {fileID: 1818022976}
@@ -3229,8 +3222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera5-Bewertung
-  catalogueNameEng: Camera5-Rating
   userTask: 0
   pages:
   - {fileID: 86120364}
@@ -3357,7 +3348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 5 - Weniger Neigung
-  pageNameEng: Camera 5 - Less Incline
 --- !u!114 &86120365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4316,8 +4306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung Maus
-  catalogueNameEng: Controls Mouse
   userTask: 1
   pages: []
 --- !u!114 &115361396
@@ -6002,8 +5990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera2-Bewertung
-  catalogueNameEng: Camera2-Rating
   userTask: 0
   pages:
   - {fileID: 1253440879}
@@ -7736,8 +7722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung2-Bewertung
-  catalogueNameEng: Controls2-Rating
   userTask: 0
   pages:
   - {fileID: 1440475308}
@@ -8097,8 +8081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera 4 - Weniger Tiefe
-  catalogueNameEng: Camera 4 - Less Depth
   userTask: 1
   pages: []
 --- !u!1 &215541325
@@ -10081,7 +10063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Wegpunkte Maus
-  pageNameEng: Controls Waypoints Mouse
 --- !u!114 &274108352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10238,8 +10219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera2
-  catalogueNameEng: Camera2
   userTask: 0
   pages:
   - {fileID: 713513170}
@@ -10533,8 +10512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Fragen
-  catalogueNameEng: Questions
   userTask: 0
   pages:
   - {fileID: 679007935}
@@ -12711,7 +12688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 6 - Direkter Vergleich
-  pageNameEng: Camera 6 - Direct Comparison
 --- !u!114 &354634311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13364,8 +13340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung Wegpunkte Keyboard
-  catalogueNameEng: Controls Waypoints Keyboard
   userTask: 1
   pages: []
 --- !u!114 &369888627
@@ -13931,8 +13905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: User Daten
-  catalogueNameEng: User Data
   userTask: 0
   pages:
   - {fileID: 1707838739}
@@ -16055,7 +16027,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung - Bewertung
-  pageNameEng: Controls - Rating
 --- !u!114 &481604372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18644,8 +18615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung1
-  catalogueNameEng: Controls1
   userTask: 0
   pages:
   - {fileID: 2093641423}
@@ -19578,8 +19547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung1-Bewertung
-  catalogueNameEng: Controls1-Rating
   userTask: 0
   pages:
   - {fileID: 917818537}
@@ -20733,8 +20700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung Keyboard
-  catalogueNameEng: Controls Keyboard
   userTask: 1
   pages: []
 --- !u!114 &652025490
@@ -21638,7 +21603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Fragen
-  pageNameEng: Questions
 --- !u!114 &679007936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22796,7 +22760,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 3 - Mehr Neigung
-  pageNameEng: Camera 3 - More Incline
 --- !u!114 &703487061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23355,7 +23318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 2 - Mehr Distanz
-  pageNameEng: Camera 2 - More Distance
 --- !u!114 &713513171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23542,8 +23504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera 5 - Weniger Neigung
-  catalogueNameEng: Camera 5 - Less Incline
   userTask: 1
   pages: []
 --- !u!1 &716841729
@@ -24240,8 +24200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung-Bewertung
-  catalogueNameEng: Controls-Rating
   userTask: 0
   pages:
   - {fileID: 481604371}
@@ -24257,8 +24215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Steuerung-Bewertung
-  nameEng: Controls-Rating
+  name: Steuerung
+  nameEng: Controls
   title1: {fileID: 812500007}
   title2: {fileID: 1664012486}
 --- !u!1001 &729138213
@@ -24649,8 +24607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung4-Bewertung
-  catalogueNameEng: Controls4-Rating
   userTask: 0
   pages:
   - {fileID: 274108351}
@@ -24684,8 +24640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera5
-  catalogueNameEng: Camera5
   userTask: 0
   pages:
   - {fileID: 1075658057}
@@ -25494,7 +25448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Wegpunkte Keyboard
-  pageNameEng: Controls Waypoints Keyboard
 --- !u!114 &774433383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28226,8 +28179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera 1 - Referenzkamera
-  catalogueNameEng: Camera 1 - Reference Camera
   userTask: 1
   pages: []
 --- !u!114 &857196538
@@ -28994,8 +28945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kameras vergleichen
-  catalogueNameEng: Compare Cameras
   userTask: 1
   pages: []
 --- !u!114 &891096207
@@ -29325,8 +29274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera 2 - Mehr Distanz
-  catalogueNameEng: Camera 2 - More Distance
   userTask: 1
   pages: []
 --- !u!1001 &898239734
@@ -29684,8 +29631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera1-Bewertung
-  catalogueNameEng: Camera1-Rating
   userTask: 0
   pages:
   - {fileID: 1795958377}
@@ -29804,7 +29749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Keyboard
-  pageNameEng: Controls Keyboard
 --- !u!114 &917818538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33976,7 +33920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kameravergleich
-  pageNameEng: Camera Comparison
 --- !u!114 &1044382445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34860,7 +34803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 5 - Weniger Neigung
-  pageNameEng: Camera 5 - Less Incline
 --- !u!114 &1075658058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35715,8 +35657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera 3 - Mehr Neigung
-  catalogueNameEng: Camera 3 - More Incline
   userTask: 1
   pages: []
 --- !u!1001 &1094711269
@@ -36183,8 +36123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera3
-  catalogueNameEng: Camera3
   userTask: 0
   pages:
   - {fileID: 24118161}
@@ -37466,8 +37404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung3-Bewertung
-  catalogueNameEng: Controls3-Rating
   userTask: 0
   pages:
   - {fileID: 1456418208}
@@ -37587,8 +37523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung2
-  catalogueNameEng: Controls2
   userTask: 0
   pages:
   - {fileID: 1609813960}
@@ -38396,8 +38330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera6
-  catalogueNameEng: Camera6
   userTask: 0
   pages:
   - {fileID: 354634310}
@@ -40479,7 +40411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 2 - Mehr Distanz
-  pageNameEng: Camera 2 - More Distance
 --- !u!114 &1253440880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44302,8 +44233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera6-Bewertung
-  catalogueNameEng: Camera6-Rating
   userTask: 0
   pages:
   - {fileID: 1044382444}
@@ -45458,7 +45387,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Maus
-  pageNameEng: Controls Mouse
 --- !u!114 &1440475309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45694,7 +45622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Wegpunkte Keyboard
-  pageNameEng: Controls Waypoints Keyboard
 --- !u!114 &1456418209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46357,8 +46284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera3-Bewertung
-  catalogueNameEng: Camera3-Rating
   userTask: 0
   pages:
   - {fileID: 703487060}
@@ -46643,7 +46568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 1 - Referenzkamera
-  pageNameEng: Camera 1 - Reference Camera
 --- !u!114 &1507447753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49682,7 +49606,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Maus
-  pageNameEng: Controls Mouse
 --- !u!114 &1609813961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51575,8 +51498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera4-Bewertung
-  catalogueNameEng: Camera4-Rating
   userTask: 0
   pages:
   - {fileID: 1860977118}
@@ -52388,7 +52309,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Anonyme Datenangabe
-  pageNameEng: Participant Data
 --- !u!114 &1707838740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52863,8 +52783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung3
-  catalogueNameEng: Controls3
   userTask: 0
   pages:
   - {fileID: 774433382}
@@ -54165,7 +54083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 1 - Referenzkamera
-  pageNameEng: Camera 1 - Reference Camera
 --- !u!114 &1795958378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54968,7 +54885,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Ende
-  pageNameEng: End
 --- !u!114 &1818022977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55611,8 +55527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Steuerung4
-  catalogueNameEng: Controls4
   userTask: 0
   pages:
   - {fileID: 1982761372}
@@ -56081,7 +55995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 4 - Weniger Tiefe
-  pageNameEng: Camera 4 - Less Depth
 --- !u!114 &1860977119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56484,7 +56397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Kamera 4 - Weniger Tiefe
-  pageNameEng: Camera 4 - Less Depth
 --- !u!114 &1881822639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59399,7 +59311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Wegpunkte Maus
-  pageNameEng: Controls Waypoints Mouse
 --- !u!114 &1982761373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62459,8 +62370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera4
-  catalogueNameEng: Camera4
   userTask: 0
   pages:
   - {fileID: 1881822638}
@@ -62941,7 +62850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pageName: Steuerung Keyboard
-  pageNameEng: Controls Keyboard
 --- !u!114 &2093641424
 MonoBehaviour:
   m_ObjectHideFlags: 0
