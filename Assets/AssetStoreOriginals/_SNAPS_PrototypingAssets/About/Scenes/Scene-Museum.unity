@@ -1055,6 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22960651}
   - component: {fileID: 22960652}
+  - component: {fileID: 22960653}
   m_Layer: 5
   m_Name: Camera1-Catalogue
   m_TagString: Untagged
@@ -1094,11 +1095,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455e3b9694cc54b47868602ce465a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalogueName: Kamera1
-  catalogueNameEng: Camera1
+  catalogueName: Kamera 1 - Referenzkamera
+  catalogueNameEng: Camera 1 - Reference Camera
   userTask: 0
   pages:
   - {fileID: 1507447752}
+--- !u!114 &22960653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22960650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Steuerung Keyboard
+  nameEng: Controls Keyboard
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &24118160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 34480023}
   - component: {fileID: 34480022}
+  - component: {fileID: 34480024}
   m_Layer: 5
   m_Name: End-Catalogue
   m_TagString: Untagged
@@ -1679,6 +1697,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &34480024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34480021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Ende
+  nameEng: End
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!4 &35252361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187067174440574497, guid: e752b1d3edb056b44898f37ac162a18a, type: 3}
@@ -3322,8 +3356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: 'Bewertung: Kamera 5 - Weniger Neigung'
-  pageNameEng: 'Rating: Camera 5 - Less Incline'
+  pageName: Kamera 5 - Weniger Neigung
+  pageNameEng: Camera 5 - Less Incline
 --- !u!114 &86120365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10046,8 +10080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: Steuerung Wegpunkte Maus - Bewertung
-  pageNameEng: Controls Waypoints Mouse - Rating
+  pageName: Steuerung Wegpunkte Maus
+  pageNameEng: Controls Waypoints Mouse
 --- !u!114 &274108352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10184,6 +10218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277631976}
   - component: {fileID: 277631975}
+  - component: {fileID: 277631977}
   m_Layer: 5
   m_Name: Camera2-Catalogue
   m_TagString: Untagged
@@ -10228,6 +10263,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &277631977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277631974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kamera 2 - Mehr Distanz
+  nameEng: Camera 2 - More Distance
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &278206748
 GameObject:
   m_ObjectHideFlags: 0
@@ -10442,6 +10493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 281283079}
   - component: {fileID: 281283080}
+  - component: {fileID: 281283081}
   m_Layer: 5
   m_Name: Questions
   m_TagString: Untagged
@@ -10486,6 +10538,22 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 679007935}
+--- !u!114 &281283081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281283078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fragen
+  nameEng: Questions
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &286466079
 GameObject:
   m_ObjectHideFlags: 0
@@ -13823,6 +13891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 388780115}
   - component: {fileID: 388780116}
+  - component: {fileID: 388780117}
   m_Layer: 5
   m_Name: User-Daten-Catalogue
   m_TagString: Untagged
@@ -13867,6 +13936,22 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 1707838739}
+--- !u!114 &388780117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388780114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Anonyme Datenangabe
+  nameEng: Participant Data
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &388901597
 GameObject:
   m_ObjectHideFlags: 0
@@ -18519,6 +18604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 559019542}
   - component: {fileID: 559019543}
+  - component: {fileID: 559019544}
   m_Layer: 5
   m_Name: Steuerung1-Catalogue
   m_TagString: Untagged
@@ -18563,6 +18649,22 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 2093641423}
+--- !u!114 &559019544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559019541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Steuerung Keyboard
+  nameEng: Controls Keyboard
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &563698822
 GameObject:
   m_ObjectHideFlags: 0
@@ -22693,8 +22795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: 'Bewertung: Kamera 3 - Mehr Neigung'
-  pageNameEng: 'Rating: Camera 3 - More Incline'
+  pageName: Kamera 3 - Mehr Neigung
+  pageNameEng: Camera 3 - More Incline
 --- !u!114 &703487061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24098,6 +24200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 728926456}
   - component: {fileID: 728926457}
+  - component: {fileID: 728926458}
   m_Layer: 5
   m_Name: Steuerung-Bewertung-Catalogue
   m_TagString: Untagged
@@ -24142,6 +24245,22 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 481604371}
+--- !u!114 &728926458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728926455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Steuerung-Bewertung
+  nameEng: Controls-Rating
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1001 &729138213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24545,6 +24664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 749552301}
   - component: {fileID: 749552300}
+  - component: {fileID: 749552302}
   m_Layer: 5
   m_Name: Camera5-Catalogue
   m_TagString: Untagged
@@ -24589,6 +24709,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &749552302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749552299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kamera 5 - Weniger Neigung
+  nameEng: Camera 5 - Less Incline
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1001 &755751200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29667,8 +29803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: Steuerung Keyboard - Bewertung
-  pageNameEng: Controls Keyboard - Rating
+  pageName: Steuerung Keyboard
+  pageNameEng: Controls Keyboard
 --- !u!114 &917818538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33839,8 +33975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: 'Bewertung: Kameravergleich'
-  pageNameEng: 'Rating: Camera Comparison'
+  pageName: Kameravergleich
+  pageNameEng: Camera Comparison
 --- !u!114 &1044382445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36027,6 +36163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115191883}
   - component: {fileID: 1115191882}
+  - component: {fileID: 1115191884}
   m_Layer: 5
   m_Name: Camera3-Catalogue
   m_TagString: Untagged
@@ -36071,6 +36208,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1115191884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115191881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kamera 3 - Mehr Neigung
+  nameEng: Camera 3 - More Incline
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1001 &1120221610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37394,6 +37547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166648852}
   - component: {fileID: 1166648853}
+  - component: {fileID: 1166648854}
   m_Layer: 5
   m_Name: Steuerung2-Catalogue
   m_TagString: Untagged
@@ -37438,6 +37592,22 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 1609813960}
+--- !u!114 &1166648854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166648851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Steuerung Maus
+  nameEng: Controls Mouse
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1001 &1167471820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38206,6 +38376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204076442}
   - component: {fileID: 1204076441}
+  - component: {fileID: 1204076443}
   m_Layer: 5
   m_Name: Camera6-Catalogue
   m_TagString: Untagged
@@ -38250,6 +38421,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1204076443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204076440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kameras vergleichen
+  nameEng: Compare Cameras
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &1205536909
 GameObject:
   m_ObjectHideFlags: 0
@@ -40291,8 +40478,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: 'Rating: Kamera 2 - Mehr Distanz'
-  pageNameEng: 'Rating: Camera 2 - More Distance'
+  pageName: Kamera 2 - Mehr Distanz
+  pageNameEng: Camera 2 - More Distance
 --- !u!114 &1253440880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45270,8 +45457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: Steuerung Maus - Bewertung
-  pageNameEng: Controls Mouse - Rating
+  pageName: Steuerung Maus
+  pageNameEng: Controls Mouse
 --- !u!114 &1440475309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45506,8 +45693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: Steuerung Wegpunkte Keyboard - Bewertung
-  pageNameEng: Controls Waypoints Keyboard - Rating
+  pageName: Steuerung Wegpunkte Keyboard
+  pageNameEng: Controls Waypoints Keyboard
 --- !u!114 &1456418209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52636,6 +52823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727699568}
   - component: {fileID: 1727699569}
+  - component: {fileID: 1727699570}
   m_Layer: 5
   m_Name: Steuerung3-Catalogue
   m_TagString: Untagged
@@ -52680,6 +52868,22 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 774433382}
+--- !u!114 &1727699570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727699567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Steuerung Wegpunkte Keyboard
+  nameEng: Controls Waypoints Keyboard
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &1728826276
 GameObject:
   m_ObjectHideFlags: 0
@@ -53960,8 +54164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: 'Bewertung: Kamera 1 - Referenzkamera'
-  pageNameEng: 'Rating: Camera 1 - Reference Camera'
+  pageName: Kamera 1 - Referenzkamera
+  pageNameEng: Camera 1 - Reference Camera
 --- !u!114 &1795958378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55387,6 +55591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1850110692}
   - component: {fileID: 1850110691}
+  - component: {fileID: 1850110693}
   m_Layer: 5
   m_Name: Steuerung4-Catalogue
   m_TagString: Untagged
@@ -55431,6 +55636,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1850110693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850110690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Steuerung Wegpunkte Maus
+  nameEng: Controls Waypoints Mouse
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1 &1850119597
 GameObject:
   m_ObjectHideFlags: 0
@@ -55859,8 +56080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f586221376ca61498b047d5ddf81039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageName: 'Bewertung: Kamera 4 - Weniger Tiefe'
-  pageNameEng: 'Rating: Camera 4 - Less Depth'
+  pageName: Kamera 4 - Weniger Tiefe
+  pageNameEng: Camera 4 - Less Depth
 --- !u!114 &1860977119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62218,6 +62439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2079450648}
   - component: {fileID: 2079450647}
+  - component: {fileID: 2079450649}
   m_Layer: 5
   m_Name: Camera4-Catalogue
   m_TagString: Untagged
@@ -62262,6 +62484,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2079450649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079450646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb33bf15d4c6d404084a7dc02f093baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Kamera 4 - Weniger Tiefe
+  nameEng: Camera 4 - Less Depth
+  title1: {fileID: 812500007}
+  title2: {fileID: 1664012486}
 --- !u!1001 &2081003451
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,12 +15,6 @@ public class UIQueryParentResult
 public class UIQueryParent : MonoBehaviour
 {
     public string pageName;
-    public string pageNameEng;
-
-    public virtual string GetLocalizedPageName()
-    {
-        return LanguageSelection.lang == 0 ? pageName : pageNameEng;
-    }
 
     private void Start()
     {

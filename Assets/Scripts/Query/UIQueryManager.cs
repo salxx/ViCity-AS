@@ -64,7 +64,7 @@ public class UIQueryManager : MonoBehaviour
 
         currentPageId++;
         currentPage.gameObject.SetActive(false);
-        pageName.text = "";
+        //pageName.text = "";
 
         if (currentCatalogue.pages.Length > currentPageId)
         {
@@ -90,20 +90,20 @@ public class UIQueryManager : MonoBehaviour
 
     private void LoadCurrentPage()
     {
+        foreach(AbstractPreparationScript prepScript in currentCatalogue.GetComponentsInChildren<AbstractPreparationScript>())
+        {
+            prepScript.DoPreparation();
+        }
         if(currentCatalogue.userTask)
         {
-            foreach(AbstractPreparationScript prepScript in currentCatalogue.GetComponentsInChildren<AbstractPreparationScript>())
-            {
-                prepScript.DoPreparation();
-            }
             gameObject.GetComponent<Canvas>().enabled = false;
-            infoCanvas.GetComponentInChildren<TextMeshProUGUI>().text = (LanguageSelection.lang == 0) ? currentCatalogue.catalogueName : currentCatalogue.catalogueNameEng;
+            //infoCanvas.GetComponentInChildren<TextMeshProUGUI>().text = (LanguageSelection.lang == 0) ? currentCatalogue.catalogueName : currentCatalogue.catalogueNameEng;
             infoCanvas.enabled = true;
         } else
         {
             currentPage = currentCatalogue.pages[currentPageId];
             currentPage.gameObject.SetActive(true);
-            pageName.text = currentPage.GetLocalizedPageName();
+            //pageName.text = currentPage.GetLocalizedPageName();
         }
     }
 
