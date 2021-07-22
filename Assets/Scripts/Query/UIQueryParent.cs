@@ -29,6 +29,12 @@ public class UIQueryParent : MonoBehaviour
     private void OnEnable()
     {
         NotifyChange();
+
+        if (LanguageSelection.lang == 1)
+        {
+            GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Next";
+        }
+
         if (GetComponentInChildren<Button>() && GetComponentInChildren<Button>().interactable)
         {
             GetComponentInChildren<Button>().interactable = false;

@@ -1054,6 +1054,7 @@ GameObject:
   - component: {fileID: 22960651}
   - component: {fileID: 22960652}
   - component: {fileID: 22960653}
+  - component: {fileID: 22960654}
   m_Layer: 5
   m_Name: Camera1-Catalogue
   m_TagString: Untagged
@@ -1112,6 +1113,21 @@ MonoBehaviour:
   nameEng: Camera 1 - Reference Camera
   title1: {fileID: 812500007}
   title2: {fileID: 1664012486}
+--- !u!114 &22960654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22960650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a9ace706889dd4eb885806835a599b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Erkunden Sie das Museum und bewerten Sie die aktuelle Kamera.
+  nameEng: Explore the museum and rate the current camera.
+  task: {fileID: 259817191}
 --- !u!1 &24118160
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,7 +4003,6 @@ GameObject:
   - component: {fileID: 111197205}
   - component: {fileID: 111197204}
   - component: {fileID: 111197203}
-  - component: {fileID: 111197206}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -4109,18 +4124,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111197201}
   m_CullTransparentMesh: 1
---- !u!114 &111197206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111197201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &113616844
 GameObject:
   m_ObjectHideFlags: 0
@@ -6568,7 +6571,6 @@ GameObject:
   - component: {fileID: 160237986}
   - component: {fileID: 160237985}
   - component: {fileID: 160237984}
-  - component: {fileID: 160237987}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -6690,18 +6692,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160237982}
   m_CullTransparentMesh: 1
---- !u!114 &160237987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160237982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &160241927
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,7 +7528,6 @@ GameObject:
   - component: {fileID: 193492867}
   - component: {fileID: 193492866}
   - component: {fileID: 193492865}
-  - component: {fileID: 193492868}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -7660,18 +7649,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193492863}
   m_CullTransparentMesh: 1
---- !u!114 &193492868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193492863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &200255373
 GameObject:
   m_ObjectHideFlags: 0
@@ -8171,7 +8148,6 @@ GameObject:
   - component: {fileID: 215577598}
   - component: {fileID: 215577597}
   - component: {fileID: 215577596}
-  - component: {fileID: 215577599}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -8293,18 +8269,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215577594}
   m_CullTransparentMesh: 1
---- !u!114 &215577599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215577594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &215586494
 GameObject:
   m_ObjectHideFlags: 0
@@ -9699,6 +9663,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4160519767647610, guid: c73151b2c863d094393f47d50c325553, type: 3}
   m_PrefabInstance: {fileID: 254751358}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &259817189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259817190}
+  - component: {fileID: 259817192}
+  - component: {fileID: 259817191}
+  m_Layer: 5
+  m_Name: Task
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &259817190
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259817189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 489948895}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 500}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &259817191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259817189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Reach the highlighted area at the far right of the museum.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &259817192
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259817189}
+  m_CullTransparentMesh: 0
 --- !u!1 &262327945
 GameObject:
   m_ObjectHideFlags: 0
@@ -10270,7 +10368,6 @@ GameObject:
   - component: {fileID: 278206752}
   - component: {fileID: 278206751}
   - component: {fileID: 278206750}
-  - component: {fileID: 278206753}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -10392,18 +10489,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278206748}
   m_CullTransparentMesh: 1
---- !u!114 &278206753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278206748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &280336106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11515,7 +11600,6 @@ GameObject:
   - component: {fileID: 324503543}
   - component: {fileID: 324503542}
   - component: {fileID: 324503541}
-  - component: {fileID: 324503544}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -11637,18 +11721,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324503539}
   m_CullTransparentMesh: 1
---- !u!114 &324503544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324503539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &329683544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15669,7 +15741,6 @@ GameObject:
   - component: {fileID: 472760224}
   - component: {fileID: 472760223}
   - component: {fileID: 472760222}
-  - component: {fileID: 472760221}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -15697,18 +15768,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -575}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &472760221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472760219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &472760222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16265,6 +16324,7 @@ RectTransform:
   - {fileID: 1585570138}
   - {fileID: 777487062}
   - {fileID: 74075430}
+  - {fileID: 259817190}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18576,6 +18636,7 @@ GameObject:
   - component: {fileID: 559019542}
   - component: {fileID: 559019543}
   - component: {fileID: 559019544}
+  - component: {fileID: 559019545}
   m_Layer: 5
   m_Name: Steuerung1-Catalogue
   m_TagString: Untagged
@@ -18634,6 +18695,21 @@ MonoBehaviour:
   nameEng: Controls Keyboard
   title1: {fileID: 812500007}
   title2: {fileID: 1664012486}
+--- !u!114 &559019545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559019541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a9ace706889dd4eb885806835a599b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Erreichen Sie den markierten Bereich am rechten Ende des Museums.
+  nameEng: Reach the highlighted area at the far right of the museum.
+  task: {fileID: 259817191}
 --- !u!1 &563698822
 GameObject:
   m_ObjectHideFlags: 0
@@ -18725,7 +18801,6 @@ GameObject:
   - component: {fileID: 565412954}
   - component: {fileID: 565412953}
   - component: {fileID: 565412952}
-  - component: {fileID: 565412955}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -18847,18 +18922,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565412950}
   m_CullTransparentMesh: 1
---- !u!114 &565412955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565412950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &566752671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4481731013709450, guid: b3e1ae4b20d1a0845a32d4418535010b, type: 3}
@@ -19075,7 +19138,6 @@ GameObject:
   - component: {fileID: 584454832}
   - component: {fileID: 584454831}
   - component: {fileID: 584454830}
-  - component: {fileID: 584454833}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -19197,18 +19259,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584454828}
   m_CullTransparentMesh: 1
---- !u!114 &584454833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584454828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &584599926
 GameObject:
   m_ObjectHideFlags: 0
@@ -20324,7 +20374,6 @@ GameObject:
   - component: {fileID: 635677327}
   - component: {fileID: 635677326}
   - component: {fileID: 635677325}
-  - component: {fileID: 635677324}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -20352,18 +20401,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -462.5}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &635677324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635677322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &635677325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21814,7 +21851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   required: 0
   queryText: Erkunden Sie das Museum und bewerten Sie die aktuelle Kamera!
-  queryTextEng: Explore the museum and rate the current camera settings!
+  queryTextEng: Explore the museum and rate the current camera!
   queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
     die Kamera bzgl. Winkel, Tiefe und Distanz.'
   queryDetailsEng: 'Movement: Preferred Movement from last section. Please rate the
@@ -22084,7 +22121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   required: 0
   queryText: Erkunden Sie das Museum und bewerten Sie die aktuelle Kamera!
-  queryTextEng: Explore the museum and rate the current camera settings!
+  queryTextEng: Explore the museum and rate the current camera!
   queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
     die Kamera bzgl. Winkel, Tiefe und Distanz.'
   queryDetailsEng: 'Movement: Preferred Movement from last section. Please rate the
@@ -22837,7 +22874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   required: 0
   queryText: Erkunden Sie das Museum und bewerten Sie die aktuelle Kamera!
-  queryTextEng: Explore the museum and rate the current camera settings!
+  queryTextEng: Explore the museum and rate the current camera!
   queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
     die Kamera bzgl. Winkel, Tiefe und Distanz.'
   queryDetailsEng: 'Movement: Preferred Movement from last section. Please rate the
@@ -24016,7 +24053,6 @@ GameObject:
   - component: {fileID: 724330442}
   - component: {fileID: 724330441}
   - component: {fileID: 724330440}
-  - component: {fileID: 724330443}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -24138,18 +24174,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724330438}
   m_CullTransparentMesh: 1
---- !u!114 &724330443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724330438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &728926455
 GameObject:
   m_ObjectHideFlags: 0
@@ -25242,7 +25266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   required: 0
   queryText: Erkunden Sie das Museum und bewerten Sie die aktuelle Kamera!
-  queryTextEng: Explore the museum and rate the current camera settings!
+  queryTextEng: Explore the museum and rate the current camera!
   queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
     die Kamera bzgl. Winkel, Tiefe und Distanz.'
   queryDetailsEng: 'Movement: Preferred Movement from last section. Please rate the
@@ -26667,7 +26691,7 @@ GameObject:
   - component: {fileID: 812500008}
   - component: {fileID: 812500007}
   m_Layer: 5
-  m_Name: Task
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30431,7 +30455,6 @@ GameObject:
   - component: {fileID: 932122265}
   - component: {fileID: 932122264}
   - component: {fileID: 932122263}
-  - component: {fileID: 932122266}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -30553,18 +30576,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932122261}
   m_CullTransparentMesh: 1
---- !u!114 &932122266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932122261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &933081499
 GameObject:
   m_ObjectHideFlags: 0
@@ -30987,7 +30998,6 @@ GameObject:
   - component: {fileID: 936284695}
   - component: {fileID: 936284694}
   - component: {fileID: 936284693}
-  - component: {fileID: 936284692}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -31015,18 +31025,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -462.5}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &936284692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936284690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &936284693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35158,7 +35156,6 @@ GameObject:
   - component: {fileID: 1084723986}
   - component: {fileID: 1084723985}
   - component: {fileID: 1084723984}
-  - component: {fileID: 1084723987}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -35280,18 +35277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084723982}
   m_CullTransparentMesh: 1
---- !u!114 &1084723987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084723982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1085534672 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 119242, guid: a9c76a0f31a399647af506139666869e, type: 3}
@@ -41431,7 +41416,6 @@ GameObject:
   - component: {fileID: 1296009246}
   - component: {fileID: 1296009245}
   - component: {fileID: 1296009244}
-  - component: {fileID: 1296009243}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -41459,18 +41443,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -575}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1296009243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296009241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1296009244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43992,7 +43964,6 @@ GameObject:
   - component: {fileID: 1396659432}
   - component: {fileID: 1396659431}
   - component: {fileID: 1396659430}
-  - component: {fileID: 1396659433}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -44114,18 +44085,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396659428}
   m_CullTransparentMesh: 1
---- !u!114 &1396659433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396659428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1400198612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44193,6 +44152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400882054}
   - component: {fileID: 1400882055}
+  - component: {fileID: 1400882056}
   m_Layer: 5
   m_Name: Camera6-Bewertung-Catalogue
   m_TagString: Untagged
@@ -44236,6 +44196,21 @@ MonoBehaviour:
   userTask: 0
   pages:
   - {fileID: 1044382444}
+--- !u!114 &1400882056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400882053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a9ace706889dd4eb885806835a599b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Erkunden Sie das Museum und vergleichen Sie die Kameras.
+  nameEng: Explore the museum and compare the cameras.
+  task: {fileID: 259817191}
 --- !u!1 &1401219074
 GameObject:
   m_ObjectHideFlags: 0
@@ -44551,6 +44526,7 @@ MonoBehaviour:
   - {fileID: 1400882055}
   - {fileID: 281283080}
   - {fileID: 34480022}
+  currentCatalogue: {fileID: 0}
 --- !u!114 &1408208133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47043,7 +47019,6 @@ GameObject:
   - component: {fileID: 1527478409}
   - component: {fileID: 1527478408}
   - component: {fileID: 1527478407}
-  - component: {fileID: 1527478410}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -47165,18 +47140,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527478405}
   m_CullTransparentMesh: 1
---- !u!114 &1527478410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527478405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1527527122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48059,7 +48022,6 @@ GameObject:
   - component: {fileID: 1561563420}
   - component: {fileID: 1561563419}
   - component: {fileID: 1561563418}
-  - component: {fileID: 1561563417}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -48087,18 +48049,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -462.5}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1561563417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561563415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1561563418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50156,7 +50106,6 @@ GameObject:
   - component: {fileID: 1633443908}
   - component: {fileID: 1633443907}
   - component: {fileID: 1633443906}
-  - component: {fileID: 1633443909}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -50278,18 +50227,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633443904}
   m_CullTransparentMesh: 1
---- !u!114 &1633443909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633443904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1636519550
 GameObject:
   m_ObjectHideFlags: 0
@@ -52166,7 +52103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   required: 0
   queryText: Erkunden Sie das Museum und bewerten Sie die aktuelle Kamera!
-  queryTextEng: Explore the museum and rate the current camera settings!
+  queryTextEng: Explore the museum and rate the current camera!
   queryDetails: 'Steuerung: Bevorzugte Steuerung der letzten Sektion. Bewerten Sie
     die Kamera bzgl. Winkel, Tiefe und Distanz.'
   queryDetailsEng: 'Movement: Preferred Movement from last section. Please rate the
@@ -55183,7 +55120,6 @@ GameObject:
   - component: {fileID: 1845750174}
   - component: {fileID: 1845750173}
   - component: {fileID: 1845750172}
-  - component: {fileID: 1845750175}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -55305,18 +55241,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845750170}
   m_CullTransparentMesh: 1
---- !u!114 &1845750175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845750170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1847030181
 GameObject:
   m_ObjectHideFlags: 0
@@ -56696,7 +56620,6 @@ GameObject:
   - component: {fileID: 1893314587}
   - component: {fileID: 1893314586}
   - component: {fileID: 1893314585}
-  - component: {fileID: 1893314588}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -56818,18 +56741,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893314583}
   m_CullTransparentMesh: 1
---- !u!114 &1893314588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893314583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1894269165
 GameObject:
   m_ObjectHideFlags: 0
@@ -57197,7 +57108,6 @@ GameObject:
   - component: {fileID: 1917827010}
   - component: {fileID: 1917827009}
   - component: {fileID: 1917827008}
-  - component: {fileID: 1917827011}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -57319,18 +57229,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917827006}
   m_CullTransparentMesh: 1
---- !u!114 &1917827011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917827006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1920159500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187067174440574497, guid: e752b1d3edb056b44898f37ac162a18a, type: 3}
@@ -59952,7 +59850,6 @@ GameObject:
   - component: {fileID: 1995384110}
   - component: {fileID: 1995384109}
   - component: {fileID: 1995384108}
-  - component: {fileID: 1995384111}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -60074,18 +59971,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995384106}
   m_CullTransparentMesh: 1
---- !u!114 &1995384111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995384106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543289f8adda9db48b3b04a2cc62e055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2002102280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4160519767647610, guid: c73151b2c863d094393f47d50c325553, type: 3}
@@ -60377,7 +60262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   required: 0
   queryText: Erkunden Sie das Museum und vergleichen Sie die Kameras!
-  queryTextEng: Explore the museum and compare the camera settings!
+  queryTextEng: Explore the museum and compare the cameras!
   queryDetails: 'Steuerung: Mit Nummertasten 1-5 zwischen Kameras wechseln'
   queryDetailsEng: 'Controls: Change Camera with Numerical Keys 1-5'
 --- !u!114 &2021875509
