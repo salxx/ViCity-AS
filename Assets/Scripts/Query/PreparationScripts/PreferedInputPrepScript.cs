@@ -10,9 +10,11 @@ public class PreferedInputPrepScript : AbstractPreparationScript
 
     public UIQueryRadioButtons decision;
 
+    public int option;
+
     public override void DoPreparation()
     {
-        int option = decision.GetComponentInChildren<RadiobuttonGroupCreator>().GetCurrentOption();
+        option = decision.GetComponentInChildren<RadiobuttonGroupCreator>().GetCurrentOption();
         switch(option)
         {
             case 0:
