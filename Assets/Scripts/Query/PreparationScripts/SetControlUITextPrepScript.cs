@@ -10,6 +10,7 @@ public class SetControlUITextPrepScript : AbstractPreparationScript
     public int controlsChild = 0;
     public bool childFromPrefered = false;
     public bool showNumbers = false;
+    public bool showCkey = false;
     public UIQueryRadioButtons decision;
 
     public override void DoPreparation()
@@ -29,6 +30,10 @@ public class SetControlUITextPrepScript : AbstractPreparationScript
         if(showNumbers)
         {
             controls.transform.GetChild(2).GetComponent<Image>().enabled = true;
+        }
+        if(showCkey)
+        {
+            controls.transform.GetChild(3).GetComponent<Image>().enabled = true;
         }
     }
 }
