@@ -8,7 +8,10 @@ public class UIQueryText : AbstractUIQuery
 {
     public string queryText;
     public string queryTextEng;
+
+    [TextArea(3, 10)]
     public string queryDetails;
+    [TextArea(3, 10)]
     public string queryDetailsEng;
 
     private void OnEnable()
