@@ -32,7 +32,13 @@ public class UIQueryParent : MonoBehaviour
 
         if (LanguageSelection.lang == 1)
         {
-            GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Next";
+            if(GetComponentInChildren<Button>())
+            {
+                GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Next";
+            } else
+            {
+                transform.parent.parent.parent.GetComponentInChildren<Button>().GetComponentInChildren<Text>().text = "Submit data";
+            }
         }
 
         if (GetComponentInChildren<Button>() && GetComponentInChildren<Button>().interactable)

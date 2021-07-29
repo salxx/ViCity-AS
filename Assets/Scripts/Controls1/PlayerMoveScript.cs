@@ -127,7 +127,6 @@ public class PlayerMoveScript : MonoBehaviour
         return direction;
     }
 
-
     private Vector3 KeyMovement()
     {
         Vector3 direction = Vector3.zero;
@@ -147,7 +146,8 @@ public class PlayerMoveScript : MonoBehaviour
         {
             direction += Vector3.right;
         }
-        transform.forward = direction.magnitude > 0.01f ? direction : Vector3.right;
+        float angle = 5 + Vector3.Angle(transform.forward, direction.magnitude > 0.01f ? direction : transform.forward) / 8f;
+        transform.forward = Vector3.RotateTowards(transform.forward, direction.magnitude > 0.01f ? direction : transform.forward, Time.deltaTime * angle, 0);
         direction.y = 0;
         direction.Normalize();
         return direction;

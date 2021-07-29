@@ -11,15 +11,27 @@ public class SendToGoogle : MonoBehaviour {
     private string BASE_URL = 
 "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdo7kMKGdSSTt7aTn36Ez0Ug16OQbP-NMk9GOJ4jF9ooCoMAA/formResponse";
 
-    IEnumerator Post(string data)
+    List<string> datas = new List<string>();
+
+    IEnumerator Post()
     {
+        string allData = "";
+        foreach(string data in datas)
+        {
+            allData += data + "\n";
+        }
         WWWForm form = new WWWForm();
-        form.AddField("entry.883024206", data);
+        form.AddField("entry.883024206", allData);
         UnityWebRequest www = UnityWebRequest.Post(BASE_URL, form);
         yield return www.SendWebRequest();
     }
 
-    public void PostData(string data) {
-        StartCoroutine(Post(data));
+    public void AddData(string data)
+    {
+        datas.Add(data);
+    }
+
+    public void PostData() {
+        StartCoroutine(Post());
     }
 }

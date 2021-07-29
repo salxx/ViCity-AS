@@ -15,6 +15,10 @@ public class UIQuerySlider : AbstractUIQuery
 
     void Awake()
     {
+        slider = GetComponentInChildren<Slider>();
+        sliderValueText = slider.GetComponentsInChildren<Text>()[slider.GetComponentsInChildren<Text>().Length - 1];
+        slider.onValueChanged.RemoveAllListeners();
+        slider.onValueChanged.AddListener(e => SliderChanged());
         GetComponent<TextMeshProUGUI>().text = (LanguageSelection.lang == 0 ? query : queryEng) + (required ? "*" : "");
         sliderValue = Mathf.RoundToInt(slider.value);
     }
