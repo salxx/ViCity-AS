@@ -118,7 +118,6 @@ public class UIQueryManager : MonoBehaviour
         {
             results.result.Add(uiQuery.GetData());
         }
-        string json = JsonUtility.ToJson(results);
-        FindObjectOfType<SendToGoogle>().AddData(json);
+        FindObjectOfType<SendToGoogle>().AddData(results);
     }
 }

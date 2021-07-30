@@ -11,14 +11,14 @@ public class SendToGoogle : MonoBehaviour {
     private string BASE_URL = 
 "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdo7kMKGdSSTt7aTn36Ez0Ug16OQbP-NMk9GOJ4jF9ooCoMAA/formResponse";
 
-    List<string> datas = new List<string>();
+    public List<UIQueryManagerResult> datas = new List<UIQueryManagerResult>();
 
     IEnumerator Post()
     {
         string allData = "";
-        foreach(string data in datas)
+        foreach(UIQueryManagerResult data in datas)
         {
-            allData += data + "\n";
+            allData += JsonUtility.ToJson(data) + "\n";
         }
         WWWForm form = new WWWForm();
         form.AddField("entry.883024206", allData);
@@ -26,7 +26,7 @@ public class SendToGoogle : MonoBehaviour {
         yield return www.SendWebRequest();
     }
 
-    public void AddData(string data)
+    public void AddData(UIQueryManagerResult data)
     {
         datas.Add(data);
     }

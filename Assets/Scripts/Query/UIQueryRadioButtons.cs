@@ -15,7 +15,6 @@ public class UIQueryRadioButtons : AbstractUIQuery
     {
         GetComponent<TextMeshProUGUI>().text = (LanguageSelection.lang == 0 ? query : queryEng) + (required ? "*" : "");
         GetComponentInChildren<RadiobuttonGroupCreator>().CreateGroup(LanguageSelection.lang == 0 ? options : optionsEng, () => GetComponentInParent<UIQueryParent>().NotifyChange());
-
     }
 
     public override AbstractUIQueryResult GetResult()

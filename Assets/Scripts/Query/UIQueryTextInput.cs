@@ -33,7 +33,9 @@ public class UIQueryTextInput : AbstractUIQuery
                 }
             }
             previousValue = input.text;
-            GetComponentInParent<UIQueryParent>().NotifyChange();
+            if(GetComponentInParent<UIQueryParent>()) {
+                GetComponentInParent<UIQueryParent>().NotifyChange();
+            }
         });
     }
 
