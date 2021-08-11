@@ -56,14 +56,17 @@ public class UIQueryManager : MonoBehaviour
         }
         currentPageId = 999;
         currentCatalogueId = index - 1;
-        NotifyPageDone();
+        NotifyPageDone(false);
     }
 
-    public void NotifyPageDone()
+    public void NotifyPageDone(bool sendData = true)
     {
         infoCanvas.enabled = false;
         gameObject.GetComponent<Canvas>().enabled = true;
-        SendData();
+        if(sendData)
+        {
+            SendData();
+        }
 
         currentPageId++;
         currentPage.gameObject.SetActive(false);

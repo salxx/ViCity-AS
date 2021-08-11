@@ -26,7 +26,7 @@ public class UIQueryToggle : AbstractUIQuery
                 GetComponentInParent<UIQueryParent>().NotifyChange();
             }
         });
-        GetComponent<TextMeshProUGUI>().text = (LanguageSelection.lang == 0 ? query : queryEng) + (required ? "*" : "");
+        //GetComponent<TextMeshProUGUI>().text = (LanguageSelection.lang == 0 ? query : queryEng) + (required ? "*" : "");
     }
 
     public override AbstractUIQueryResult GetResult()
