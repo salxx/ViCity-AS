@@ -24,6 +24,13 @@ public class FillVerificationPrepScript : AbstractPreparationScript
     public UIQuerySlider camera5;
     public UIQueryRadioButtons cameras;
 
+    public UIQuerySlider avatar1;
+    public UIQueryRadioButtons avatar1RB;
+    public UIQuerySlider avatar2;
+    public UIQueryRadioButtons avatar2RB;
+    public UIQuerySlider avatar3;
+    public UIQueryRadioButtons avatar3RB;
+
     public UIQueryTextInput q1;
     public UIQueryTextInput q2;
     public UIQueryTextInput q3;
@@ -74,8 +81,23 @@ SetSliderValue(camera5, data.result[0].result[0]);
             } else
             if(query.Equals("Kameravergleich")){
 SetRadioButtonValue(cameras, data.result[0].result[0]);
-            } else
-            if(query.Equals("Fragen")){
+            }
+            else if(query.Equals("Agents1")){
+                SetSliderValue(avatar1, data.result[0].result[0]);
+                SetRadioButtonValue(avatar1RB, data.result[0].result[1]);
+            }
+            else if (query.Equals("Agents2"))
+            {
+                SetSliderValue(avatar2, data.result[0].result[0]);
+                SetRadioButtonValue(avatar2RB, data.result[0].result[1]);
+            }
+            else if (query.Equals("Agents3"))
+            {
+                SetSliderValue(avatar3, data.result[0].result[0]);
+                SetRadioButtonValue(avatar3RB, data.result[0].result[1]);
+            }
+            else
+            if (query.Equals("Fragen")){
              SetTextInputValue(q1, data.result[0].result[0]);
              SetTextInputValue(q2, data.result[0].result[1]);
              SetTextInputValue(q3, data.result[0].result[2]);

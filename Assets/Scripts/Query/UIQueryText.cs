@@ -6,7 +6,9 @@ using System;
 
 public class UIQueryText : AbstractUIQuery
 {
+    [TextArea(3, 10)]
     public string queryText;
+    [TextArea(3, 10)]
     public string queryTextEng;
 
     [TextArea(3, 10)]
