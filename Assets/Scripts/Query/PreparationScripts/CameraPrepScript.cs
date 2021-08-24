@@ -14,5 +14,10 @@ public class CameraPrepScript : AbstractPreparationScript
             cameraParent.transform.GetChild(i).gameObject.SetActive(false);
         }
         cameraToEnable.SetActive(true);
+
+        if(FindObjectOfType<CameraPlayerSwitchScript>())
+        {
+            FindObjectOfType<CameraPlayerSwitchScript>().OnEnable();
+        }
     }
 }

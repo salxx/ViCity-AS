@@ -24,6 +24,8 @@ public class FillVerificationPrepScript : AbstractPreparationScript
     public UIQuerySlider camera5;
     public UIQueryRadioButtons cameras;
 
+    public UIQuerySlider avatar0;
+    public UIQueryRadioButtons avatar0RB;
     public UIQuerySlider avatar1;
     public UIQueryRadioButtons avatar1RB;
     public UIQuerySlider avatar2;
@@ -81,6 +83,11 @@ SetSliderValue(camera5, data.result[0].result[0]);
             } else
             if(query.Equals("Kameravergleich")){
 SetRadioButtonValue(cameras, data.result[0].result[0]);
+            }
+            else if (query.Equals("Agents0"))
+            {
+                SetSliderValue(avatar0, data.result[0].result[0]);
+                SetRadioButtonValue(avatar0RB, data.result[0].result[1]);
             }
             else if(query.Equals("Agents1")){
                 SetSliderValue(avatar1, data.result[0].result[0]);

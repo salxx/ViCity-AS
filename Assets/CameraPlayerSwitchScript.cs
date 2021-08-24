@@ -8,7 +8,7 @@ public class CameraPlayerSwitchScript : MonoBehaviour
     public GameObject cameraParent;
     public TextMeshProUGUI cameraNameText;
 
-    private void OnEnable()
+    public void OnEnable()
     {
         cameraNameText.text = LanguageSelection.lang == 0 ? "Kamera 1 - Referenz" : "Camera 1 - Reference";
         CameraSwitch0(0);
