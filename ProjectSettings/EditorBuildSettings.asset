@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Scenes/Scene-Museum.unity
+  - enabled: 0
+    path: Assets/Scene-Museum-Survey.unity
     guid: 5316247deb2326c4da4d01efe9177d96
+  - enabled: 1
+    path: Assets/Scene-Museum-Netcode.unity
+    guid: a59ef7351f7c01d4f8e00883f8fadcb1
   m_configObjects: {}
