@@ -9,8 +9,19 @@ using System.Net.Sockets;
 using System.Net;
 using Unity.Jobs;
 
+public struct RelayMessage : NetworkMessage
+{
+    public ushort port;
+
+    public RelayMessage(ushort port)
+    {
+        this.port = port;
+    }
+}
+
 public class ServerOnly : MonoBehaviour
 {
+    public static string avatarName;
     public SimpleWebTransport transport;
     public NetworkManager networkManager;
     static NetworkManager networkManagerStatic;
@@ -53,21 +64,38 @@ public class ServerOnly : MonoBehaviour
             StartCoroutine(MonitoringCoroutine(port));
         } else
         {
-            TcpClient tcpClient = new TcpClient("localhost", 8008);
-            Byte[] data = new Byte[256];
-            String responseData = String.Empty;
-            NetworkStream stream = tcpClient.GetStream();
-            Int32 bytes = stream.Read(data, 0, data.Length);
-            responseData = System.Text.Encoding.ASCII.GetString(data, 0, bytes);
-            stream.Close();
-            tcpClient.Close();
-            port = ushort.Parse(responseData);
-            Debug.Log("Received Port: " + port);
-
-            transport.port = port;
-            networkManager.enabled = true;
-            StartCoroutine(DelayedClientStart());
+            // if client do nothing
         }
+    }
+
+    public void ConnectClient()
+    {
+        transport.port = 8008;
+        networkManager.enabled = true;
+        NetworkClient.RegisterHandler<RelayMessage>(OnRelayMessage);
+        networkManager.StartClient();
+    }
+
+    public void DisconnectClient()
+    {
+        networkManager.StopClient();
+        networkManager.enabled = false;
+    }
+
+    private void OnRelayMessageServer(NetworkConnection conn, RelayMessage message)
+    {
+        OnRelayMessage(message);
+    }
+
+    private void OnRelayMessage(RelayMessage message)
+    {
+        networkManager.StopClient();
+        networkManager.enabled = false;
+        Debug.Log("Got port: " + message.port);
+        transport.port = message.port;
+        networkManager.autoCreatePlayer = true;
+        networkManager.enabled = true;
+        StartCoroutine(DelayedClientStart());
     }
 
     IEnumerator DelayedServerStart()
@@ -121,6 +149,7 @@ public class ServerOnly : MonoBehaviour
                     NetworkStream stream = client.GetStream();
                     byte[] msg = System.Text.Encoding.ASCII.GetBytes("" + networkManagerStatic.numPlayers);
                     stream.Write(msg, 0, msg.Length);
+                    stream.Close();
                     /*int i;
                     while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
                     {
@@ -131,6 +160,10 @@ public class ServerOnly : MonoBehaviour
                         stream.Write(msg, 0, msg.Length);
                         Console.WriteLine("Sent: {0}", data);
                     }*/
+                    while (client.Connected)
+                    {
+                        // wait
+                    }
                     client.Close();
                 }
             }

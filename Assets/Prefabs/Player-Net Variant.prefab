@@ -450,6 +450,18 @@ MonoBehaviour:
   visible: 0
   m_AssetId: e22959ca068d6b346b0aa43a48a6a17a
   hasSpawned: 0
+--- !u!114 &-6859227948032228333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592495153851030102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1ea4a33b4b9e94ca359e6c0a0012bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6591924777475844750
 PrefabInstance:
   m_ObjectHideFlags: 0

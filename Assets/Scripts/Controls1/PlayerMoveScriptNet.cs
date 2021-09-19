@@ -15,12 +15,7 @@ public class PlayerMoveScriptNet : NetworkBehaviour
     public bool allowKeys = true;
     public bool allowMouse = false;
     CharacterController characterController;
-
     Vector3 zeroPosition = new Vector3(20, 0, -18);
-
-    [SyncVar(hook = nameof(SetAvatarName))]
-    public string avatarName = "";
-
     float previousDestinationDistance;
 
 
@@ -37,17 +32,7 @@ public class PlayerMoveScriptNet : NetworkBehaviour
 
     public override void OnStartClient()
     {
-        avatarName = FindObjectOfType<TMPro.TMP_InputField>().text;
-        GetComponentInChildren<TMPro.TextMeshProUGUI>().text = avatarName;
     }
-
-
-    void SetAvatarName(string oldName, string newName)
-    {
-        avatarName = newName;
-        GetComponentInChildren<TMPro.TextMeshProUGUI>().text = avatarName;
-    }
-
 
     private void OnEnable()
     {
