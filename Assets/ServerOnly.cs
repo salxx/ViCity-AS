@@ -30,42 +30,37 @@ public class ServerOnly : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (Application.platform != RuntimePlatform.WebGLPlayer && !Application.isEditor) // server side
-        {
+#if UNITY_SERVER
             if (!monitoringJobHandle.IsCompleted)
             {
                 monitoringJob.Interrupt();
                 monitoringJobHandle.Complete();
             }
-        }
+#endif
     }
     void Start()
     {
         networkManagerStatic = networkManager;
+#if UNITY_SERVER
         ushort port = 8000;
-        if (Application.platform != RuntimePlatform.WebGLPlayer && !Application.isEditor) // server side
+        string[] args = System.Environment.GetCommandLineArgs();
+        if (args != null)
         {
-            string[] args = System.Environment.GetCommandLineArgs();
-            if (args != null)
+            for (int i = 0; i < args.Length; i++)
             {
-                for (int i = 0; i < args.Length; i++)
+                string arg = args[i];
+                if (arg.Equals("-port"))
                 {
-                    string arg = args[i];
-                    if (arg.Equals("-port"))
-                    {
-                        port = ushort.Parse(args[i + 1]);
-                        break;
-                    }
+                    port = ushort.Parse(args[i + 1]);
+                    break;
                 }
             }
-            transport.port = port;
-            networkManager.enabled = true;
-            StartCoroutine(DelayedServerStart());
-            StartCoroutine(MonitoringCoroutine(port));
-        } else
-        {
-            // if client do nothing
         }
+        transport.port = port;
+        networkManager.enabled = true;
+        StartCoroutine(DelayedServerStart());
+        StartCoroutine(MonitoringCoroutine(port));
+#endif
     }
 
     public void ConnectClient()
@@ -76,26 +71,25 @@ public class ServerOnly : MonoBehaviour
         networkManager.StartClient();
     }
 
+
     public void DisconnectClient()
     {
         networkManager.StopClient();
         networkManager.enabled = false;
     }
 
-    private void OnRelayMessageServer(NetworkConnection conn, RelayMessage message)
+    /*private void OnRelayMessageServer(NetworkConnection conn, RelayMessage message)
     {
         OnRelayMessage(message);
-    }
+    }*/
 
     private void OnRelayMessage(RelayMessage message)
     {
         networkManager.StopClient();
-        networkManager.enabled = false;
         Debug.Log("Got port: " + message.port);
         transport.port = message.port;
         networkManager.autoCreatePlayer = true;
-        networkManager.enabled = true;
-        StartCoroutine(DelayedClientStart());
+        StartCoroutine(DelayedClientStart()); // needs to be delayed by one frame
     }
 
     IEnumerator DelayedServerStart()
